@@ -212,7 +212,7 @@ func cleanTaint(node *apiv1.Node, client kube_client.Interface, taintKey string,
 			klog.V(1).Infof("Marking node %v to be uncordoned by Cluster Autoscaler", freshNode.Name)
 			freshNode.Spec.Unschedulable = false
 		}
-		_, err = client.CoreV1().Nodes().Update(context.TODO(), freshNode, metav1.UpdateOptions{})
+		_, err = client.CoreV1().Nodes().Update(freshNode)
 
 		if err != nil && errors.IsConflict(err) && time.Now().Before(retryDeadline) {
 			refresh = true
