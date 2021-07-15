@@ -25,7 +25,7 @@ require (
 	github.com/satori/go.uuid v1.2.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.4.0
-	golang.org/x/crypto v0.0.0-20200220183623-bac4c82f6975
+	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
 	golang.org/x/oauth2 v0.0.0-20191202225959-858c2ad4c8b6
 	google.golang.org/api v0.15.1
 	gopkg.in/gcfg.v1 v1.2.0
@@ -39,7 +39,7 @@ require (
 	k8s.io/klog/v2 v2.2.0
 	k8s.io/kubernetes v0.0.0
 	k8s.io/legacy-cloud-providers v0.0.0
-	k8s.io/utils v0.0.0-20200619165400-6e3d28b6ed19
+	k8s.io/utils v0.0.0-20200729134348-d5654de09c73
 )
 
 replace (
